@@ -3,17 +3,16 @@ console.log("Hello World!")
 function playGame() {
     let humanScore = 0;
     let computerScore = 0;
-    let computerSelection;
     for (let i = 1; i < 6; i++) {
         function getComputerChoice() {
             let randNum = Math.random();
 
             if (randNum > 0.6) {
-                computerSelection = "rock";
+                return "rock";
             } else if (randNum > 0.3) {
-                computerSelection = "paper";
+                return "paper";
             }else {
-                computerSelection = "scissor";
+                return "scissor";
             }
         }
 
@@ -88,7 +87,7 @@ function playGame() {
         }
 
         let humanSelection = getHumanChoice().toLocaleLowerCase();
-        // computerSelection = getComputerChoice().toLocaleLowerCase();
+        computerSelection = getComputerChoice().toLocaleLowerCase();
 
         console.log("human chose: " + humanSelection);
         console.log("computer chose: " + computerSelection);
