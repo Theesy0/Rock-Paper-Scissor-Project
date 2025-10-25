@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #D1BCE3;
+}
+
+.scores {
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #C49BBB;
+    color: #19297C;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.battle {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #585481;
+    height: 400px;
+}
+
+.choiceHeader {
+    text-align: center;
+    font-size: 25px;
+    color: #D1BCE3;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    gap: 10px;
+    margin: 10px;
+}
+
+#rock, #paper, #scissors {
+    flex-grow: 1;
+    font-size: 20px;
+    background-color: #C49BBB;
+    border-color: #C49BBB;
+    color: #19297C;
+    border-radius: 30px;
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #19297C;
+}
