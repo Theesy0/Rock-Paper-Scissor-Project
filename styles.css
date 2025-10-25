@@ -50,3 +50,7 @@ body {
     font-size: 30px;
     color: #19297C;
 }
+
+img {
+    margin: 0 auto;
+}
